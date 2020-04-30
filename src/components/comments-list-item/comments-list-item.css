@@ -1,0 +1,58 @@
+.app-comments-item {
+  font-size: 1.25rem;
+}
+
+.app-comments-item button {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.app-comments-item button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.app-comments-item .btn-trash {
+  color: red;
+}
+.app-comments-item .fa-heart {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: red;
+  transition: 0.3s all;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.app-comments-item-label {
+  display: block;
+  line-height: 35px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s all;
+}
+
+.app-comments-item.like .fa-heart {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.time {
+  color: #1c1e21;
+  font-size: small;
+}
+
+.likeit {
+  font-size: small;
+  color: #3875c5;
+}
+
+.likeit_dont {
+  font-size: small;
+  color: #ff3347;
+}
