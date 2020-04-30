@@ -10,11 +10,6 @@ export default class App extends Component {
     super(props);
     this.state = {
       data: [],
-      // data: [
-      //   { name: "AAA", label: "first comment", like: false, id: nextId() },
-      //   { name: "BBB", label: "second comment", like: false, id: nextId() },
-      //   { name: "CCC", label: "third comment", like: false, id: nextId() },
-      // ],
     };
     this.deleteItem = this.deleteItem.bind(this);
     this.addItem = this.addItem.bind(this);
@@ -51,7 +46,8 @@ export default class App extends Component {
       time: new Date().toLocaleString(),
       like: false,
       // id: nextId(),
-      id: Math.floor(Math.random() * 100000000000 + 1),
+      // id: Math.floor(Math.random() * 100000000000 + 1),
+      id: Date.now(),
     };
 
     this.setState(({ data }) => {
