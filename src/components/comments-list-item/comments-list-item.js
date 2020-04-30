@@ -18,7 +18,9 @@ export default class CommentsListItem extends Component {
       <div className={classNames}>
         <span className="app-comments-item-label">
           <span style={{ color: "#3875c5" }}>{name}</span> :{" "}
-          <span style={{ color: "#1c1e21" }}>{label}</span>
+          <span style={{ color: "#1c1e21" }}>
+            {label.replace(/<[^>]+>/g, "").trim()}
+          </span>
           <br />
           <span className="time">{time}</span>{" "}
           <span className={clazzNames} onClick={onToggleLiked}>
